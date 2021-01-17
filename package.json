@@ -1,0 +1,20 @@
+{
+  "name": "00-frontenddep",
+  "version": "0.0.0",
+  "description": "Código base para administrar paquetería front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kailyev/diaw-2020.git"
+  },
+  "keywords": ["node", "frontend"],
+  "author": "Karla Enriquez <karlaeef@gmail.com> (example.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kailyev/diaw-2020/issues"
+  },
+  "homepage": "https://github.com/Kailyev/diaw-2020#readme"
+}
