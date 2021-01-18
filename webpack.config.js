@@ -1,5 +1,5 @@
-const { dirname } = require('path')
 const path = require('path')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
     //1.Especificando el archivo index e entrada
@@ -12,7 +12,7 @@ module.exports = {
     //3.Folder donde servira
     devServer: {
         contentBase: path.join(__dirname, '/dist'),
-        port:4040,
+        port:4045,
         compress: true,
         publicPath:'/'
     },
@@ -24,5 +24,6 @@ module.exports = {
                 use : ['babel-loader']
             },
         ]
-    }
+    },
+    plugins:[new ESLintPlugin()]
 }
