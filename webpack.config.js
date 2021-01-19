@@ -12,7 +12,7 @@ module.exports = {
     //3.Folder donde servira
     devServer: {
         contentBase: path.join(__dirname, '/dist'),
-        port:4045,
+        port:8085,
         compress: true,
         publicPath:'/'
     },
@@ -23,6 +23,10 @@ module.exports = {
                 exclude:/node_modules/,
                 use : ['babel-loader']
             },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
         ]
     },
     plugins:[new ESLintPlugin()]
