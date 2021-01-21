@@ -4,7 +4,7 @@
 // Importar los estilos
 // import './styles/styles.css';
 import 'materialize-css/dist/css/materialize.css';
-import initDropdown from './helpers/dropdowninit';
+import Dropdown from './helpers/dropdown';
 
 // Ejecutando funcion de inicializacion de dropdown
-initDropdown();
+Dropdown.init();
